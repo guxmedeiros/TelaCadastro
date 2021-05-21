@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+:root {
+  --main-blue: #1f97ce;
+  --second-blue: #1073b5;
+  --main-font: "Quicksand", sans-serif;
+  --main-padding: 10px 30px;
+  --main-gap: 15px;
+  --main-border: 2px solid #ddd;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+.main-container {
+  box-shadow: 0 0 5px 0 gray;
+  width: 600px;
+  max-width: 90%;
+  min-height: 400px;
+}
+.main-container header {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  background: var(--main-blue);
+  padding: var(--main-padding);
+  box-sizing: border-box;
+}
+.main-container header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-gap);
+  box-sizing: border-box;
+  padding: var(--main-padding);
+  padding-top: 30px;
+}
+.dados {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100px;
+}
+.dados > input,
+.dados > select {
+  flex: 1 1;
+  height: 25px;
+  padding: 6px;
+  box-sizing: border-box;
+  border: var(--main-border);
+}
+
+.dados > label {
+  font-weight: bolder;
+}
+.dados-email {
+  flex: 1 1 200px;
+}
+.dados-obs {
+  flex: 1 1 100%;
+}
+.dados-obs textarea {
+  resize: none;
+  border: var(--main-border);
+}
+.buttons {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--main-gap);
+}
+.buttons input {
+  border: none;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100px;
+}
+
+.buttons input:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 5px 0 gray;
+}
+.buttons input:first-child {
+  background: var(--second-blue);
+  color: white;
+}
+.buttons input:last-child {
+  border: 1px solid var(--second-blue);
+  color: var(--second-blue);
+}

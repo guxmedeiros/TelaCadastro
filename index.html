@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>cadastro usuário | Serratec</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <h3>Adicionar usuário</h3>
+    </header>
+
+    <form>
+      <div class="dados">
+        <label>Nome</label>
+        <input placeholder="Nome" name="nome" required type="text">
+      </div>
+
+      <div class="dados dados-email">
+        <label>E-mail</label>
+        <input placeholder="E-mail" name="email" required type="email">
+      </div>
+
+      <div class="dados">
+        <label>Senha</label>
+        <input placeholder="Senha" name="senha" required type="password">
+      </div>
+
+      <div class="dados">
+        <label>Sexo</label>
+        <select name="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </div>
+
+      <div class="dados">
+        <label>Tipo de dev</label>
+        <select name="dev">
+          <option value="frontEnd">FrontEnd</option>
+          <option value="backEnd">BackEnd</option>
+          <option value="fullStack">FullStack</option>
+        </select>
+      </div>
+
+      <div class="dados dados-obs">
+        <label>Observações</label>
+        <textarea name="obs" id="" cols="30" rows="7"></textarea>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" class="botao-salvar" value="Salvar">
+        <input type="reset" class="botao-cancelar" value="Cancelar">
+      </div>
+
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
